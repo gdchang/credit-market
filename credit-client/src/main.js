@@ -10,7 +10,7 @@ import store from './store'
 // 引入VueLazyload插件
 import VueLazyload from 'vue-lazyload'
 // 将一张loading图片加载进来
-import loading from './common/imgs/loading.gif'
+// import loading from './common/imgs/loading.gif'
 
 // 引入fastclick并绑定到body 解决移动端点击响应延迟0.3s的问题
 import FastClick from 'fastclick'
