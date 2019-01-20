@@ -4,13 +4,11 @@
     <!-- 设置路由组件的视图位置 -->
     <router-view></router-view>
     <!-- 并放置非路由组件 -->
-    <FooterGuide v-show="$route.meta.showFooter"></FooterGuide>
   </div>
 </template>
 
 <script>
 import {mapActions} from 'vuex'
-import FooterGuide from './components/FooterGuide/FooterGuide.vue'
 // 引入底部组件并注册
 export default {
   async mounted () {
@@ -21,7 +19,6 @@ export default {
     this.getUserInfo()
   },
   components: {
-    FooterGuide
   },
   methods: {
     ...mapActions(['getUserInfo'])
